@@ -5,10 +5,10 @@ Helper script that clones/pulls user repositories to grab the latest code.
 import os
 import shutil
 
-users = ['tomflannaghan']  # list of github user accounts.
+users = []  # list of github user accounts.
 
 # Path of the maze installation that we want to import into.
-maze_installation = '/home/flannt/maze'
+maze_installation = None
 
 for user in users:
     if not os.path.exists(user):
